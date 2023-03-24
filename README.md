@@ -22,31 +22,27 @@ npm run dev
 
 Abre [http://localhost:3000](http://localhost:3000) con tu navegador.
 
-La página web tiene un campo de búsqueda que utiliza un componente de Autocompletado de Pokemon para ayudar al usuario a encontrar el Pokemon deseado. Al seleccionar un Pokemon, la página realiza una solicitud a la API y muestra la información del Pokemon seleccionado, como su nombre, altura, peso y una imagen de su apariencia.
+
 
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Decripción General
+La web app solicitada por Landscape, presenta dos paginas en un layout responsivo, con diseño para dispositivos mobiles y de escritorio, incluye un Appbar adaptativo.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## FORM page
+Presenta un formulario con campos de datos personales con validaciones que se envia en el lado del cliente al endPoint http://localhost:3000/api/person, creado con las caracteristicas de API proporcionadas por Next.js.
 
-## Learn More
+La API valida tambien los datos en el lado del servidor. 
 
-To learn more about Next.js, take a look at the following resources:
+## POKEDEX page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Presenta un campo de búsqueda que utiliza un componente de Autocompletado de Pokemon para ayudar al usuario a encontrar el Pokemon deseado. Al seleccionar un Pokemon, la página realiza una solicitud a la API (pokeapi.co) y muestra la información del Pokemon seleccionado, como su nombre, altura, peso y una imagen de su apariencia.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Entre los endPoints de pokeapi.co, basando en la docoumentación, solamente se peuden consultar datos espcificos de un pokémon, consultando con su numero o su nombre. La solución propuesta fue utilizar un endPoint que devuelve la lista completa de los pokemon con su nombre y una url, para cargar mediante SSR el componente AutocomplePokemon, de esta manera el usuario realiza una busqueda eficiente del pokemon deseado y cuando se realiza la selección se hace una consulta del lado de cliente con el nombre del pokemon buscado. 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
