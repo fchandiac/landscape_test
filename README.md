@@ -1,6 +1,6 @@
 Este es un test para la empresa Lanscape
 
-## Getting Started
+## Empezando
 
 Clona el repositorio
 ```bash
