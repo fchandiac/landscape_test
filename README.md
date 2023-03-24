@@ -24,12 +24,6 @@ Abre [http://localhost:3000](http://localhost:3000) con tu navegador.
 
 
 
-
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
-
 ## Decripción General
 La web app solicitada por Landscape, presenta dos paginas en un layout responsivo, con diseño para dispositivos mobiles y de escritorio, incluye un Appbar adaptativo.
 
@@ -45,4 +39,6 @@ Presenta un campo de búsqueda que utiliza un componente de Autocompletado de Po
 Entre los endPoints de pokeapi.co, basando en la docoumentación, solamente se peuden consultar datos espcificos de un pokémon, consultando con su numero o su nombre. La solución propuesta fue utilizar un endPoint que devuelve la lista completa de los pokemon con su nombre y una url, para cargar mediante SSR el componente AutocomplePokemon, de esta manera el usuario realiza una busqueda eficiente del pokemon deseado y cuando se realiza la selección se hace una consulta del lado de cliente con el nombre del pokemon buscado. 
 
 
+## DOCKER
 
+imagen disponible en [https://hub.docker.com/r/fchandiac/landscape/tags] https://hub.docker.com/r/fchandiac/landscape/tags
