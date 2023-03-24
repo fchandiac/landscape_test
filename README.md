@@ -42,3 +42,9 @@ Entre los endPoints de pokeapi.co, basado en la docoumentación, solamente se pu
 ## DOCKER
 
 imagen disponible en https://hub.docker.com/r/fchandiac/landscape/tags
+
+Realizar prueba con el comando
+
+```bash
+docker run fchandiac/landscape -p 3000:3000
+```
