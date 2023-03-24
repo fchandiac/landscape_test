@@ -36,9 +36,9 @@ La API valida tambien los datos en el lado del servidor.
 
 Presenta un campo de búsqueda que utiliza un componente de Autocompletado de Pokemon para ayudar al usuario a encontrar el Pokemon deseado. Al seleccionar un Pokemon, la página realiza una solicitud a la API (pokeapi.co) y muestra la información del Pokemon seleccionado, como su nombre, altura, peso y una imagen de su apariencia.
 
-Entre los endPoints de pokeapi.co, basando en la docoumentación, solamente se peuden consultar datos espcificos de un pokémon, consultando con su numero o su nombre. La solución propuesta fue utilizar un endPoint que devuelve la lista completa de los pokemon con su nombre y una url, para cargar mediante SSR el componente AutocomplePokemon, de esta manera el usuario realiza una busqueda eficiente del pokemon deseado y cuando se realiza la selección se hace una consulta del lado de cliente con el nombre del pokemon buscado. 
+Entre los endPoints de pokeapi.co, basado en la docoumentación, solamente se pueden consultar datos espcificos de un pokémon, mediante su numero o nombre. La solución propuesta fue utilizar un endPoint que devuelve la lista completa de los pokémons con su nombre y una url, para cargar mediante SSR el componente AutocomplePokemon, de esta manera el usuario realiza una busqueda eficiente del pokemon deseado y cuando se realiza la selección se hace una consulta del lado de cliente con el nombre del pokemon a consultar. 
 
 
 ## DOCKER
 
-imagen disponible en [https://hub.docker.com/r/fchandiac/landscape/tags] https://hub.docker.com/r/fchandiac/landscape/tags
+imagen disponible en https://hub.docker.com/r/fchandiac/landscape/tags
