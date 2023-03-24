@@ -1,6 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Este es un test para la empresa Lanscape
 
 ## Getting Started
+
+-Clona el repositorio
+-corre npm install
+-corre el servidor de desarrollo
+
+La página web tiene un campo de búsqueda que utiliza un componente de Autocompletado de Pokemon para ayudar al usuario a encontrar el Pokemon deseado. Al seleccionar un Pokemon, la página realiza una solicitud a la API y muestra la información del Pokemon seleccionado, como su nombre, altura, peso y una imagen de su apariencia.
 
 First, run the development server:
 
