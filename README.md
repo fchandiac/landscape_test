@@ -2,21 +2,29 @@ Este es un test para la empresa Lanscape
 
 ## Getting Started
 
--Clona el repositorio
--corre npm install
--corre el servidor de desarrollo
+Clona el repositorio
+```bash
+git clone https://github.com/fchandiac/landscape_test.git
+```
 
-La página web tiene un campo de búsqueda que utiliza un componente de Autocompletado de Pokemon para ayudar al usuario a encontrar el Pokemon deseado. Al seleccionar un Pokemon, la página realiza una solicitud a la API y muestra la información del Pokemon seleccionado, como su nombre, altura, peso y una imagen de su apariencia.
+Instala las dependecias
 
-First, run the development server:
+```bash
+npm install
+```
+
+
+Ejecuta el servidor de desarrollo
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
+
+Abre [http://localhost:3000](http://localhost:3000) con tu navegador.
+
+La página web tiene un campo de búsqueda que utiliza un componente de Autocompletado de Pokemon para ayudar al usuario a encontrar el Pokemon deseado. Al seleccionar un Pokemon, la página realiza una solicitud a la API y muestra la información del Pokemon seleccionado, como su nombre, altura, peso y una imagen de su apariencia.
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
